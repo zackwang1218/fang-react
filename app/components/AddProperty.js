@@ -8,7 +8,6 @@ import _ from 'underscore'
 import counterpart from 'counterpart'
 import AutoSuggest from 'react-autosuggest'
 import DatePicker from 'react-datepicker'
-import moment from 'moment'
 import InputText from './form/InputText'
 import TextArea from './form/TextArea'
 

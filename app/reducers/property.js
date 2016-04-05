@@ -1,7 +1,9 @@
 import { modeled } from 'react-redux-form'
 import config from '../../config'
+import moment from 'moment'
 
 const initialState = {
+  suburbSearch: '',
   suburb: '',
   postcode: '',
   price: '',
@@ -17,7 +19,7 @@ const initialState = {
   contactSocial: '',
   preferredContact: '',
   bond: '',
-  availableStart: '',
+  availableStart: moment(),
   minTerm: '',
   propertyFeature: [],
   geolocation: []
@@ -26,9 +28,9 @@ const initialState = {
 function propertyReducer(state = initialState, action) {
   switch (action.type) {
     case 'ADD_PROPERTY':
-          return state
+      return state
     default:
-          return state
+      return state
   }
 }
 

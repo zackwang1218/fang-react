@@ -1,3 +1,5 @@
+import { createAction } from 'redux-actions'
+
 /*
  * action types
  */
@@ -13,3 +15,5 @@ export function addProperty(property) {
     property
   }
 }
+
+export const searchSuburb = createAction('search suburb')

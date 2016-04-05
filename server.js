@@ -2,6 +2,7 @@ import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { Provider } from 'react-redux'
 import { RouterContext, Router, match } from 'react-router'
+import configureStore from './app/configureStore'
 
 var swig  = require('swig');
 var routes = require('./app/routes');
@@ -15,7 +16,6 @@ var favicon = require('serve-favicon');
 var mongoose = require('mongoose');
 var config = require('./config');
 
-const configureStore = require('./app/configureStore');
 const PropertyService = require('./services/PropertyService');
 const propertyService = new PropertyService();
 const LocationService = require('./services/LocationService');

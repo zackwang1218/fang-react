@@ -13,6 +13,9 @@ var processSuburbs = function (res, suburbs) {
     var result = {};
     result.value = suburbs[i].suburb + ', ' + suburbs[i].postcode + ', ' + suburbs[i].state;
     result.label = result.value;
+    result.suburb = suburbs[i].suburb;
+    result.postcode = suburbs[i].postcode;
+    result.state = suburbs[i].state;
     results.push(result);
   }
 
