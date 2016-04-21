@@ -31,6 +31,10 @@
 * ListingActions -> ListingStore (handle all properties listing actions and states)
 * SearchActions -> SearchStore (handle all search including search narrow downs)
 
+## Testing
+* install jest: npm install -g jest-cli
+* run tests: npm test
+
 ## How to translate
 
 1) do the following import in component if needed:

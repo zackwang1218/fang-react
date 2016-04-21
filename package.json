@@ -16,7 +16,8 @@
     "watch": "nodemon main.js",
     "build": "gulp build",
     "jshint": "jshint --verbose ./app",
-    "test": "NODE_ENV=test eslint ./app && jshint",
+    "jshint-test": "NODE_ENV=test eslint ./app && jshint",
+    "test": "jest",
     "postinstall": "gulp build"
   },
   "dependencies": {
@@ -95,6 +96,7 @@
     "eslint": "^2.2.0",
     "eslint-config-airbnb": "^6.0.2",
     "eslint-plugin-react": "^4.1.0",
+    "jest": "^0.1.40",
     "jshint": "*"
   },
   "license": "MIT"
